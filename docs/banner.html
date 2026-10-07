@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- The README banner. Rendered to banner.png at 1680x600 (840x300 at 2x). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Archivo"; src: url("../web/fonts/Archivo-Variable.woff2") format("woff2"); font-weight: 100 900; }
+  @font-face { font-family: "IBM Plex Mono"; src: url("../web/fonts/IBMPlexMono-500.woff2") format("woff2"); font-weight: 500; }
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 840px; height: 300px; overflow: hidden; background: #0f1113; color: #eef2f5; font-family: "Archivo", sans-serif; }
+  .frame {
+    position: relative; width: 840px; height: 300px; padding: 44px 52px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    background:
+      radial-gradient(520px 260px at 88% 115%, rgba(70, 217, 138, .16), transparent 70%),
+      linear-gradient(#16191c, #0f1113);
+    border: 1px solid #242a2f; border-radius: 20px;
+  }
+  .lockup { display: flex; align-items: center; gap: 22px; }
+  .tile { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 17px; background: #46d98a; color: #04150c; }
+  .tile svg { width: 72%; height: 72%; fill: none; stroke: currentColor; stroke-width: 2.8; stroke-linecap: round; }
+  .word { font-size: 44px; line-height: 1; font-weight: 700; letter-spacing: -0.01em; }
+  .word b { color: #46d98a; font-weight: 700; }
+  .join { color: #7c868f; font: 500 15px/1 "IBM Plex Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
+  .line { max-width: 470px; color: #b3bcc4; font-size: 21px; line-height: 1.35; }
+  .line strong { color: #eef2f5; font-weight: 650; }
+  .keys { position: absolute; right: 52px; bottom: 44px; display: grid; grid-template-columns: repeat(3, 62px); gap: 10px; }
+  .keys span { display: grid; place-items: center; height: 62px; border: 1px solid #3b4248; border-radius: 12px; background: #16191c; color: #b3bcc4; font: 500 24px/1 "IBM Plex Mono", monospace; }
+  .keys span.lit { border-color: #46d98a; background: #46d98a; color: #04150c; box-shadow: 0 0 34px rgba(70, 217, 138, .35); }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="lockup">
+      <span class="tile"><svg viewBox="0 0 24 24"><path d="M4 10v4"/><path d="M8 7v10"/><path d="M12 3v18"/><path d="M16 7v10"/><path d="M20 10v4"/></svg></span>
+      <span class="word">air<b>drift</b></span>
+      <span class="join">for</span>
+      <span class="word">Bose SoundTouch</span>
+    </div>
+    <p class="line"><strong>Your six preset buttons, playing again.</strong> Free internet radio on the speaker you already own, from a server on your own network.</p>
+    <div class="keys" aria-hidden="true"><span class="lit">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
+  </div>
+</body>
+</html>

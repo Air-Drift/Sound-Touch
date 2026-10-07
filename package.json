@@ -1,0 +1,16 @@
+{
+  "name": "sound-touch",
+  "version": "0.1.0",
+  "description": "Air Drift for SoundTouch: a self-hosted service that brings the six preset buttons on Bose SoundTouch speakers back to life.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "DATA_DIR=./data node --watch src/server.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  }
+}

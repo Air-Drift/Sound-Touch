@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Air Drift">
+  <!-- The logo's tile: green-500 with the five bars in on-green, matching
+       .brand-tile in css/app.css (radius 28%, bars across 72% at stroke 2.8
+       on a 24-unit grid). It follows the OS theme as the app's logo does. -->
+  <style>
+    .tile { fill: #46d98a; }
+    .bars { stroke: #04150c; }
+    @media (prefers-color-scheme: light) {
+      .tile { fill: #117a47; }
+      .bars { stroke: #ffffff; }
+    }
+  </style>
+  <rect class="tile" width="512" height="512" rx="143"/>
+  <g class="bars" fill="none" stroke-width="2.8" stroke-linecap="round"
+     transform="translate(71.68 71.68) scale(15.36)">
+    <path d="M4 10v4"/><path d="M8 7v10"/><path d="M12 3v18"/><path d="M16 7v10"/><path d="M20 10v4"/>
+  </g>
+</svg>

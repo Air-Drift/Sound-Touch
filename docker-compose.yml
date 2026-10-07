@@ -1,0 +1,20 @@
+services:
+  sound-touch:
+    image: ghcr.io/air-drift/sound-touch:latest
+    container_name: sound-touch
+    restart: unless-stopped
+    # The host network lets the server find speakers by itself and is the
+    # simplest setup on Linux. On Docker Desktop (Mac, Windows) remove this
+    # line, use the ports below, and add speakers by address in the wizard.
+    network_mode: host
+    # ports:
+    #   - "8686:8686"
+    environment:
+      PORT: "8686"
+      # PUBLIC_URL: "http://192.168.1.20:8686"   # pin the address speakers use
+      # ALLOWED_HOSTS: "soundtouch.example.com"  # extra names for the setup pages
+    volumes:
+      - sound-touch-data:/data
+
+volumes:
+  sound-touch-data:

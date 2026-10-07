@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#16191c">
+  <title>Air Drift for SoundTouch</title>
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="preload" href="/fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/" aria-label="Air Drift for SoundTouch, home">
+      <span class="brand-tile" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 10v4"/><path d="M8 7v10"/><path d="M12 3v18"/><path d="M16 7v10"/><path d="M20 10v4"/></svg>
+      </span>
+      <span class="brand-word">air<b>drift</b></span>
+      <span class="brand-for">for SoundTouch</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections" hidden>
+      <a href="#/" data-nav="speakers">Speakers</a>
+      <a href="#/health" data-nav="health">Health</a>
+      <a href="#/setup/1" data-nav="setup">Setup</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <p class="loading">Starting up…</p>
+  </main>
+
+  <footer class="foot">
+    <p>Stations come from <a href="https://airdrift.stream" target="_blank" rel="noopener">airdrift.stream</a>, free internet radio from everywhere.</p>
+    <p>An independent project, not affiliated with or endorsed by Bose. SoundTouch is a trademark of Bose Corporation. <span id="version"></span></p>
+  </footer>
+
+  <dialog id="picker" class="picker" aria-labelledby="picker-title"></dialog>
+  <audio id="preview" preload="none"></audio>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
